@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap" rel="stylesheet">
     <title>Keroppi</title>
 </head>
 <body>
     <main>
-        <div>
+        <div id="title-container">
             <h1 id="title">Help Keroppi get ready for the day!</h1>
         </div>
         <div id="buttons-container">
-            <button id="start-button">Music</button>
-            <button id="reset-button">Reset</button>
-            <button id="help-button">Help</button>
-            <save-button id="save-button">Save</save-button>
+            <div id="start-button" class="options">🎵</div>
+            <div id="reset-button" class="options">Reset</div>
+            <div id="help-button" class="options">Help</div>
 
         </div>
         <div id="game-container">
@@ -24,13 +26,31 @@
                 <img src="assets/images/falda.svg" alt="falda" id="falda-image">
             </div>  
             <div id="tabs-container">
-                <button id="clothes">C</button>
-                <button id="head-accesories">hA</button>
-                <button id="hand-accesories">hA</button>
-                <button id="keroppi-background">b</button>
+                <div id="clothes">C</div>
+                <div id="head-accesories">hA</div>
+                <div id="hand-accesories">hA</div>
+                <div id="keroppi-background">b</div>
             </div>
             <div id="options-container">
+                <div id="clothes-options" >
+                    <div id="bubble">
+                        <img src="assets/images/falda.svg" alt="falda" class="clothes-image">
+                    </div>
+                    <div id="bubble">
+                        <img src="assets/images/falda.svg" alt="falda" class="clothes-image">
+                    </div>
+                    <div id="bubble">
+                        <img src="assets/images/falda.svg" alt="falda" class="clothes-image">
+                    </div>
+                </div>
+
+                <div id="arrows-container">
+                    <button id="left-arrow" class="arrows">←</button>
+                    <button id="right-arrow" class="arrows">→</button>
+    
+                </div>
             </div>
+
 
         </div>
           

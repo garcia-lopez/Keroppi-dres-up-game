@@ -12,8 +12,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: green;
-}
+    background-image: url('../assets/images/Background5.svg'); 
+    background-size: fit;
+    background-color: #98DAF1;
+    background-position: center;
+    }
 
 main {
     display: flex;
@@ -26,26 +29,57 @@ main {
 
 /*GAME STYLE :D*/
 
-#title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-#buttons-container, #tabs-container {
+#title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    background-color: white;
+    border-radius: 20px;
+    height: 25px;
+    width: 500px;
+    border-color: black;
+    border-style: solid;
+    padding: 20px;
+}
+
+#title, .options {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+
+#title {
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+    font-family: "Delius Unicase", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#buttons-container {
+
+    width: 500px;	
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#tabs-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 #tabs-container {
     margin-bottom: 0;
-    justify-content: space-around;
 }
 
 #game-container {
@@ -55,8 +89,12 @@ main {
     height: 500px;
     background: rgb(243,255,186);
     margin: 0;
-    border-radius: 10px;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
 }
+
 #keroppi-container{
     position: relative;
     display: flex;
@@ -65,6 +103,7 @@ main {
     width: 100%;
     height: 60%;
     background-color: purple;
+    border-radius: 20px 20px 0 0;
 }
 
 #falda-image {
@@ -73,23 +112,62 @@ main {
     height: 90px;
     bottom: 0;
     z-index: 1;
-
-
 }
+
 #keroppi-image {
     width: 200px;
     height: 200px;
 }
 
+.options {
+    background-color: white;
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
 #options-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 40%;
+    height: 50%;
     background-color: aqua;
+    border-radius: 0 0 20px 20px;
 }
 
+#clothes-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+#arrows-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.clothes-image {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#bubble {
+    background-color: yellowgreen;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
 /*Media Queries
 Media Querie for Mobile Devices
 */
@@ -110,6 +188,19 @@ Media Querie for Mobile Devices
     #falda-image {
         width: 111px;
         height: 80px;
+    }
+
+    #title {
+        font-size: 20px;
+    }
+
+    #title-container, #buttons-container {
+        width: 90vw;
+    }
+
+    #title-container {
+        height: 30px;
+        padding: 10px;
     }
 }
 
