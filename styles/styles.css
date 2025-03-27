@@ -74,8 +74,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 10px;
 }
 
 #tabs-container {
@@ -87,7 +86,7 @@ main {
     flex-direction: column;
     width: 500px;
     height: 500px;
-    background: rgb(243,255,186);
+    background: #CDABEB;
     margin: 0;
     border-radius: 25px;
     border-color: black;
@@ -102,29 +101,37 @@ main {
     align-items: last baseline;
     width: 100%;
     height: 60%;
-    background-color: purple;
+    background-image: url('../assets/images/Background5.svg');
+    background-color: #98DAF1;
+    border-bottom: 5px solid black;
+    background-size: cover;
     border-radius: 20px 20px 0 0;
 }
 
 #falda-image {
-   position: absolute;
+    position: absolute;
     width: 120px;
     height: 90px;
-    bottom: 0;
+    bottom: 5px;
     z-index: 1;
 }
 
 #keroppi-image {
     width: 200px;
     height: 200px;
+    margin-bottom: 5px;
 }
 
 .options {
     background-color: white;
     border-color: black;
     border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
     padding: 10px;
     cursor: pointer;
+    transition: all .2s ease-in-out; 
+
 }
 
 #options-container {
@@ -134,8 +141,9 @@ main {
     align-items: center;
     width: 100%;
     height: 50%;
-    background-color: aqua;
+    background-color: #F6C2F3;
     border-radius: 0 0 20px 20px;
+    border-top: 5px solid black;
 }
 
 #clothes-options {
@@ -161,13 +169,20 @@ main {
 }
 
 #bubble {
-    background-color: yellowgreen;
+    background-color: #CDABEB;
     padding: 10px;
     border-radius: 20px;
     border-style: solid;
     border-width: 2px;
     border-color: black;
+    transition: all .2s ease-in-out; 
 }
+
+#bubble:hover, .options:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #9862c7;
+}
+
 /*Media Queries
 Media Querie for Mobile Devices
 */
@@ -201,6 +216,19 @@ Media Querie for Mobile Devices
     #title-container {
         height: 30px;
         padding: 10px;
+    }
+
+    .clothes-image {
+        width: 80px;
+        height: 80px;
+    }
+    #bubble {
+        padding: 5px;
+    }
+
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
