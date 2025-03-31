@@ -116,6 +116,14 @@ main {
     z-index: 1;
 }
 
+#head-image {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 150px;
+    z-index: 2;
+}
+
 #keroppi-image {
     width: 200px;
     height: 200px;
@@ -168,7 +176,7 @@ main {
     cursor: pointer;
 }
 
-#bubble {
+.bubble {
     background-color: #CDABEB;
     padding: 10px;
     border-radius: 20px;
@@ -178,9 +186,22 @@ main {
     transition: all .2s ease-in-out; 
 }
 
-#bubble:hover, .options:hover {
+.bubble:hover, .options:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px #9862c7;
+}
+
+/*Styling the arrows*/
+
+#right-arrow, #left-arrow {
+    width: 60px;
+    height: 60px; 
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#right-arrow:hover, #left-arrow:hover {
+    transform: scale(1.1);
 }
 
 /*Media Queries
@@ -205,6 +226,10 @@ Media Querie for Mobile Devices
         height: 80px;
     }
 
+    #head-image {
+        bottom: 130px;
+    }
+
     #title {
         font-size: 20px;
     }
@@ -222,7 +247,7 @@ Media Querie for Mobile Devices
         width: 80px;
         height: 80px;
     }
-    #bubble {
+    .bubble {
         padding: 5px;
     }
 

@@ -1,0 +1,16 @@
+<svg width="713" height="312" viewBox="0 0 713 312" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M588.634 29C394.708 106.5 256.166 100.869 71.1344 29L16.134 213.5C-2.40054 289.08 22.5385 303.029 71.1342 301H357.134H571.634H657.134C705.007 296.081 713.348 277.603 691.134 213.5L612.134 15L588.634 29Z" fill="#06721F" stroke="black" stroke-width="20"/>
+<path d="M356 91V293" stroke="black" stroke-width="10"/>
+<circle cx="301" cy="127" r="14.5" fill="#FFCC00" stroke="black" stroke-width="5"/>
+<circle cx="410" cy="127" r="14.5" fill="#FFCC00" stroke="black" stroke-width="5"/>
+<circle cx="301" cy="175" r="14.5" fill="#FFCC00" stroke="black" stroke-width="5"/>
+<circle cx="410" cy="175" r="14.5" fill="#FFCC00" stroke="black" stroke-width="5"/>
+<circle cx="301" cy="223" r="14.5" fill="#FFCC00" stroke="black" stroke-width="5"/>
+<circle cx="410" cy="223" r="14.5" fill="#FFCC00" stroke="black" stroke-width="5"/>
+<circle cx="301" cy="271" r="14.5" fill="#FFCC00" stroke="black" stroke-width="5"/>
+<circle cx="410" cy="271" r="14.5" fill="#FFCC00" stroke="black" stroke-width="5"/>
+<rect x="301.5" y="124.5" width="108" height="6" rx="3" fill="#FFCC00" stroke="black"/>
+<rect x="301.5" y="172.5" width="108" height="6" rx="3" fill="#FFCC00" stroke="black"/>
+<rect x="301.5" y="220.5" width="108" height="6" rx="3" fill="#FFCC00" stroke="black"/>
+<rect x="301.5" y="268.5" width="108" height="6" rx="3" fill="#FFCC00" stroke="black"/>
+</svg>
