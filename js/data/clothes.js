@@ -1,4 +1,5 @@
 // This file contains the data for the clothes options in the game.
+// I am not using the id property in the images array, but I am keeping it in case I may use it in the future.
 export const imagesArray = [
     {
         id: 'first-option',
@@ -52,23 +53,35 @@ export const imagesArray = [
 
 export const headImagesArray = [ 
     {
-        id: 'first-option',
+        id: 'head-option',
         src: '../assets/images/keroppi-clothes/head-accesories/stars.svg',
     },
     {
-        id: 'second-option',
+        id: 'head-option',
         src: '../assets/images/keroppi-clothes/head-accesories/flowers.svg',
     },
     {
-        id: 'third-option',
-        src: '../assets/images/keroppi-clothes/head-accesories/cat-ears.svg',
+        id: 'head-option',
+        src: '../assets/images/keroppi-clothes/head-accesories/ribbons.svg',
     },
     {
-        id: 'fourth-option',
-        src: '../assets/images/keroppi-clothes/head-accesories/stars.svg',
+        id: 'head-option',
+        src: '../assets/images/keroppi-clothes/head-accesories/fruit-crown.svg',
+    }
+]
+
+export const faceImagesArray = [
+    {
+        id: 'face-option',
+        src: '../assets/images/keroppi-clothes/face-accesories/sunglasses.png',
     },
     {
-        id: 'fifth-option',
-        src: '../assets/images/keroppi-clothes/head-accesories/stars.svg',
+        id: 'face-option',
+        src: '../assets/images/keroppi-clothes/face-accesories/eyeglasses2.png',
+    },
+    {
+        id: 'face-option',
+        src: '../assets/images/keroppi-clothes/face-accesories/round-glasses.png',
+
     }
 ]

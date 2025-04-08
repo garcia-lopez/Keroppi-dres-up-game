@@ -116,14 +116,29 @@ main {
     z-index: 1;
 }
 
-#head-image {
+#head-image, #face-accessory-image {
     position: absolute;
-    width: 120px;
-    height: 120px;
-    bottom: 150px;
+
     z-index: 2;
 }
 
+/*Styling the head accesorie with a class*/
+
+.head-option {
+    width: 120px;
+    height: 120px;
+    bottom: 150px;
+}
+
+/*Styling the glasses with a class*/
+.face-option {
+    top: 40px;
+    left: 158px;
+    width: 178px;
+    height: 70px;
+}
+
+/*Styling the keroppi image - main image*/
 #keroppi-image {
     width: 200px;
     height: 200px;
@@ -172,13 +187,17 @@ main {
 
 .clothes-image {
     width: 100px;
-    height: 100px;
+    height: 50px;
     cursor: pointer;
 }
 
 .bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #CDABEB;
     padding: 10px;
+    height: 100px;
     border-radius: 20px;
     border-style: solid;
     border-width: 2px;
@@ -203,6 +222,7 @@ main {
 #right-arrow:hover, #left-arrow:hover {
     transform: scale(1.1);
 }
+
 
 /*Media Queries
 Media Querie for Mobile Devices
@@ -245,16 +265,25 @@ Media Querie for Mobile Devices
 
     .clothes-image {
         width: 80px;
-        height: 80px;
+        height: 40px;
     }
     .bubble {
         padding: 5px;
     }
+    .face-option {
+        position: absolute;
+        top: 40%;
+        left: 49%;
+        width: 178px;
+        height: 70px;
+        transform: translate(-50%, -50%);
+      }
 
     body {
         background-size: cover;
         background-repeat: no-repeat;
     }
+
 }
 
 

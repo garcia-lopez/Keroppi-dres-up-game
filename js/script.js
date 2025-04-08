@@ -1,12 +1,13 @@
-import { imagesArray, headImagesArray } from "./data/clothes.js";
+import { imagesArray, headImagesArray, faceImagesArray } from "./data/clothes.js";
 
 const images = document.querySelectorAll('.clothes-image');
-let skirt, head;
+let skirt, head, face;
 const keroppi_image = document.getElementById('keroppi-image'),
       resetButton = document.getElementById('reset-button'),
       elements = [
         skirt = document.getElementById('falda-image'),
         head = document.getElementById('head-image'),
+        face = document.getElementById('face-accessory-image')
       ],
       leftArrow = document.getElementById('left-arrow'),
       rightArrow = document.getElementById('right-arrow');
@@ -22,14 +23,14 @@ let selectedOption = skirt; // Default option
 const tabMap = {
   'clothes': [imagesArray, skirt],
   'head-accesories': [headImagesArray, head],
-  'hand-accesories': 'hand',
-  'keroppi-background': 'background',
+  'face-accesories': [faceImagesArray, face],
+  'keroppi-background': [faceImagesArray, face],
 };
 
 function cleanKeroppi() {
     elements.forEach(el => {
         el.style.display = 'none';
-      }); // Hide all elements initially
+      }); 
 }
 
 cleanKeroppi(); // Hide all elements initially
@@ -48,21 +49,18 @@ resetButton.addEventListener('click', function() {
     keroppi_image.style.animation = 'none';
     cleanKeroppi(); // Hide all elements initially
     setTimeout(() => { keroppi_image.style.animation = 'jump-shaking 0.5s'; }, 10); /*To ensure that an animation re-asigns properly, I need to set a small timeout -.-*/
-
-    
 });
 
 images.forEach((image) => {
     image.addEventListener('click', function() {
+
         selectedOption.style.display = 'block';
         selectedOption.src = this.src;
-    });
+      });
 })
-
 
 rightArrow.addEventListener('click', function () {
     counter += imagesPerView;
-
     // Si se pasa del final, reinicia al principio
     if (counter >= selectedCategory.length) {
         counter = 0;
@@ -86,17 +84,17 @@ leftArrow.addEventListener('click', function () {
 });
 
 function updateImages() {
-    for (let i = 0; i < imagesPerView; i++) {
-      const imageData = selectedCategory[counter + i];
-  
-      if (imageData && images[i]) {
-        images[i].src = imageData.src;
-        images[i].style.display = 'block'; // mostrar la imagen si hay datos
-      } else if (images[i]) {
-        images[i].style.display = 'none'; // ocultar si no hay data
-      }
+  for (let i = 0; i < imagesPerView; i++) {
+    const imageData = selectedCategory[counter + i];
+    if (imageData && images[i]) {
+      images[i].src = imageData.src;
+      images[i].style.display = 'block';
+    } else if (images[i]) 
+      {
+      images[i].style.display = 'none';
     }
   }
+}
 
 
 
