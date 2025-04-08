@@ -132,7 +132,7 @@ main {
 
 /*Styling the glasses with a class*/
 .face-option {
-    top: 40px;
+    top: 25px;
     left: 158px;
     width: 178px;
     height: 70px;
@@ -146,6 +146,9 @@ main {
 }
 
 .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     border-color: black;
     border-radius: 10px;
@@ -153,6 +156,7 @@ main {
     border-width: 2px;
     padding: 10px;
     cursor: pointer;
+    height: 40px;
     transition: all .2s ease-in-out; 
 
 }
@@ -223,6 +227,15 @@ main {
     transform: scale(1.1);
 }
 
+.tab-image {
+    width: 50px;
+    cursor: pointer;
+}
+
+#background-image-tab {
+    height: 40px;
+}
+
 
 /*Media Queries
 Media Querie for Mobile Devices
@@ -272,7 +285,7 @@ Media Querie for Mobile Devices
     }
     .face-option {
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: 49%;
         width: 178px;
         height: 70px;

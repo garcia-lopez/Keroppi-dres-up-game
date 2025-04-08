@@ -67,8 +67,17 @@ export const headImagesArray = [
     {
         id: 'head-option',
         src: '../assets/images/keroppi-clothes/head-accesories/fruit-crown.svg',
-    }
+    },
+    {
+        id: 'head-option',
+        src: '../assets/images/keroppi-clothes/head-accesories/crown3.svg',
+    },
+{
+    id: 'head-option',
+    src: '../assets/images/keroppi-clothes/head-accesories/redRibbon.svg',
+}
 ]
+
 
 export const faceImagesArray = [
     {
@@ -83,5 +92,7 @@ export const faceImagesArray = [
         id: 'face-option',
         src: '../assets/images/keroppi-clothes/face-accesories/round-glasses.png',
 
-    }
+    },
+
+    
 ]
