@@ -1,0 +1,13 @@
+<svg width="1334" height="1322" viewBox="0 0 1334 1322" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="249" y="5" width="1080" height="221" rx="45" fill="#CDABEB" stroke="black" stroke-width="10"/>
+<path d="M294 5H364V1089H249V50C249 25.1472 269.147 5 294 5Z" fill="#CDABEB" stroke="black" stroke-width="10"/>
+<path d="M1214 5H1284C1308.85 5 1329 25.1472 1329 50V1089H1214V5Z" fill="#CDABEB" stroke="black" stroke-width="10"/>
+<path d="M1329 1128C1329 1232.62 1248.4 1317 1149.5 1317C1050.6 1317 970 1232.62 970 1128C970 1023.38 1050.6 939 1149.5 939C1248.4 939 1329 1023.38 1329 1128Z" fill="#CDABEB" stroke="black" stroke-width="10"/>
+<path d="M364 1128C364 1232.62 283.402 1317 184.5 1317C85.5985 1317 5 1232.62 5 1128C5 1023.38 85.5985 939 184.5 939C283.402 939 364 1023.38 364 1128Z" fill="#CDABEB" stroke="black" stroke-width="10"/>
+<rect x="334" y="10" width="67" height="211" fill="#CDABEB"/>
+<rect x="1157" y="10" width="67" height="211" fill="#CDABEB"/>
+<rect x="289" y="966" width="70" height="162" fill="#CDABEB"/>
+<rect x="254" y="912" width="70" height="162" fill="#CDABEB"/>
+<rect x="1219" y="886" width="70" height="162" fill="#CDABEB"/>
+<rect x="1254" y="966" width="70" height="162" fill="#CDABEB"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="1451" height="1369" viewBox="0 0 1451 1369" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="269" y="72" width="1040" height="181" rx="25" fill="#CDABEB" stroke="black" stroke-width="50"/>
+<path d="M294 72H344V1116H269V97C269 83.1929 280.193 72 294 72Z" fill="#CDABEB" stroke="black" stroke-width="50"/>
+<path d="M1234 72H1284C1297.81 72 1309 83.1929 1309 97V1116H1234V72Z" fill="#CDABEB" stroke="black" stroke-width="50"/>
+<path d="M1309 1175C1309 1269.53 1236.42 1344 1149.5 1344C1062.58 1344 990 1269.53 990 1175C990 1080.47 1062.58 1006 1149.5 1006C1236.42 1006 1309 1080.47 1309 1175Z" fill="#CDABEB" stroke="black" stroke-width="50"/>
+<path d="M344 1175C344 1269.53 271.421 1344 184.5 1344C97.5786 1344 25 1269.53 25 1175C25 1080.47 97.5786 1006 184.5 1006C271.421 1006 344 1080.47 344 1175Z" fill="#CDABEB" stroke="black" stroke-width="50"/>
+<rect x="318" y="97" width="83" height="131" fill="#CDABEB"/>
+<rect x="1175" y="97" width="93" height="131" fill="#CDABEB"/>
+<rect x="294" y="1006" width="25" height="162" fill="#CDABEB"/>
+<rect x="1259" y="1007" width="25" height="162" fill="#CDABEB"/>
+<line x1="254.647" y1="50.0086" x2="1401.01" y2="1298.35" stroke="black" stroke-width="100" stroke-linecap="round"/>
+<line x1="50" y1="-50" x2="1744.85" y2="-50" transform="matrix(-0.67638 0.736553 0.736553 0.67638 1334 47)" stroke="black" stroke-width="100" stroke-linecap="round"/>
+</svg>

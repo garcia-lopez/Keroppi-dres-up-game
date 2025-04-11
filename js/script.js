@@ -1,20 +1,28 @@
 import { imagesArray, headImagesArray, faceImagesArray } from "./data/clothes.js";
+import { backgroundImagesArray } from "./data/wallpaper.js";
 
 const images = document.querySelectorAll('.clothes-image');
-let skirt, head, face;
+let skirt, head, face, container; // Declare variables for the images
 const keroppi_image = document.getElementById('keroppi-image'),
       resetButton = document.getElementById('reset-button'),
       elements = [
         skirt = document.getElementById('falda-image'),
         head = document.getElementById('head-image'),
-        face = document.getElementById('face-accessory-image')
+        face = document.getElementById('face-accessory-image'),
+        container = document.getElementById('keroppi-container')
       ],
+      musicButton = document.getElementById('music-button'),
       leftArrow = document.getElementById('left-arrow'),
       rightArrow = document.getElementById('right-arrow');
 
 
 let counter = 0; // start index
 const imagesPerView = 3;
+let isPlaying = true; // Variable to track the music state
+
+const song = new Audio();
+song.src = '../assets/music/music.mp3'; // Path to your music file
+song.loop = true; // Loop the music
 
 /*Doing the tabs logic */
 let selectedCategory = imagesArray; // Default category
@@ -24,16 +32,58 @@ const tabMap = {
   'clothes': [imagesArray, skirt],
   'head-accesories': [headImagesArray, head],
   'face-accesories': [faceImagesArray, face],
-  'keroppi-background': [faceImagesArray, face],
+  'keroppi-background': [backgroundImagesArray, container],
 };
 
 function cleanKeroppi() {
-    elements.forEach(el => {
-        el.style.display = 'none';
-      }); 
+  elements.forEach(el => {
+      if (el === container) {
+          // Specific logic for the element with id 'falda-image'
+          el.style.display = 'flex'; // Keep this element visible
+          el.style.backgroundImage = `url(${backgroundImagesArray[0].wallpaper})`; // Set the default background image
+          el.style.backgroundSize = 'cover'; // Optional: Adjust the background size
+          document.body.style.backgroundImage = `url(${backgroundImagesArray[0].wallpaper})`; // Set the default body background image
+          document.body.style.backgroundSize = 'cover'; // Optional: Adjust the background size
+      } else {
+          // Default logic for other elements
+          el.style.display = 'none';
+      }
+  });
 }
 
-cleanKeroppi(); // Hide all elements initially
+function playMusic() {
+  const icon = document.getElementById('music-icon');
+  if (isPlaying) {
+       icon.src = '../assets/images/img-elements/no-music-icon.svg';	
+       song.pause(); // Pause the music
+       isPlaying = false;
+  } else { 
+       isPlaying = true;
+       song.play(); // Play the music
+       icon.src = '../assets/images/img-elements/music-icon.svg';	
+  }
+}
+
+function updateBackground(source) {
+  container.style.backgroundImage = `url(${source})`; // Update the background image of the container
+  container.style.backgroundSize = 'cover'; // Optional: Adjust the background size
+  document.body.style.backgroundImage = `url(${source})`; // Update the body background image
+  document.body.style.backgroundSize = 'cover'; // Optional: Adjust the background size
+}
+
+function updateImages() {
+  for (let i = 0; i < imagesPerView; i++) {
+    const imageData = selectedCategory[counter + i];
+    if (imageData && images[i]) {
+      images[i].id = imageData.id;
+      images[i].src = imageData.src;
+      images[i].style.display = 'block';
+    } else if (images[i]) 
+      {
+      images[i].style.display = 'none';
+    }
+  }
+}
 
 Object.keys(tabMap).forEach((tab) => {
   const tabElement = document.getElementById(tab);
@@ -53,7 +103,10 @@ resetButton.addEventListener('click', function() {
 
 images.forEach((image) => {
     image.addEventListener('click', function() {
-
+        if (selectedOption === container) {
+            updateBackground(backgroundImagesArray.find(bg => bg.id === this.id).wallpaper); // Update the background image of the container
+            return;
+        }
         selectedOption.style.display = 'block';
         selectedOption.src = this.src;
       });
@@ -79,22 +132,16 @@ leftArrow.addEventListener('click', function () {
             ? selectedCategory.length - imagesPerView
             : selectedCategory.length - remainder;
     }
-
     updateImages();
 });
 
-function updateImages() {
-  for (let i = 0; i < imagesPerView; i++) {
-    const imageData = selectedCategory[counter + i];
-    if (imageData && images[i]) {
-      images[i].src = imageData.src;
-      images[i].style.display = 'block';
-    } else if (images[i]) 
-      {
-      images[i].style.display = 'none';
-    }
-  }
-}
+
+musicButton.addEventListener('click', function() {
+   playMusic();
+});
+
+cleanKeroppi(); // Hide all elements initially
+playMusic(); // Call the function to set the initial state of the icon
 
 
 

@@ -12,9 +12,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../assets/images/Background5.svg'); 
-    background-size: fit;
-    background-color: #98DAF1;
+    background-image: url('../assets/images/backgrounds/defaultBackground.svg'); 
+    background-size: cover;
+    background-color: black;
     background-position: center;
     }
 
@@ -101,8 +101,8 @@ main {
     align-items: last baseline;
     width: 100%;
     height: 60%;
-    background-image: url('../assets/images/Background5.svg');
-    background-color: #98DAF1;
+    background-image: url('../assets/images/backgrounds/defaultBackground.svg');
+    background-color: black;
     border-bottom: 5px solid black;
     background-size: cover;
     border-radius: 20px 20px 0 0;
@@ -149,6 +149,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50px;
+    height: 50px;
     background-color: white;
     border-color: black;
     border-radius: 10px;
@@ -158,7 +160,13 @@ main {
     cursor: pointer;
     height: 40px;
     transition: all .2s ease-in-out; 
+}
 
+#music-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .2s ease-in-out; 
 }
 
 #options-container {
@@ -185,6 +193,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 5px;
     width: 100%;
     height: 20%;
 }

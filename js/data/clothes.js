@@ -93,6 +93,18 @@ export const faceImagesArray = [
         src: '../assets/images/keroppi-clothes/face-accesories/round-glasses.png',
 
     },
+    {
+        id: 'face-option',
+        src: '../assets/images/keroppi-clothes/face-accesories/star-sunglasses.svg',
+    },
+    {
+        id: 'face-option',
+        src: '../assets/images/keroppi-clothes/face-accesories/roundSunglasses2.svg',
+    },
+    {
+        id: 'face-option',
+        src: '../assets/images/keroppi-clothes/face-accesories/brown-sunglasses.svg',
+    }
 
     
 ]
