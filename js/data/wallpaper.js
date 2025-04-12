@@ -15,5 +15,20 @@ export const backgroundImagesArray = [
         id: 'sunset-background',
         src: '../assets/images/background-options/sunsetOption.svg',
         wallpaper: '../assets/images/backgrounds/sunsetBackground.svg',
+    },
+    {
+        id: 'restaurant-background',
+        src: '../assets/images/background-Options/restaurantOption.svg',
+        wallpaper: '../assets/images/backgrounds/restaurantBackground.svg',
+    },
+    {
+        id: 'beach-background',
+        src: '../assets/images/background-Options/beachOption.svg',
+        wallpaper: '../assets/images/backgrounds/beachBackground.svg',
+    },
+    {
+        id: 'city-background',
+        src: '../assets/images/background-Options/cityLightsOption.svg',
+        wallpaper: '../assets/images/backgrounds/cityLightsBackground.svg',
     }
 ]
