@@ -18,17 +18,17 @@ export const backgroundImagesArray = [
     },
     {
         id: 'restaurant-background',
-        src: '../assets/images/backgrounds/restaurantBackground.svg',
+        src: '../assets/images/background-options/restaurantOption.svg',
         wallpaper: '../assets/images/backgrounds/restaurantBackground.svg',
     },
     {
         id: 'beach-background',
-        src: '../assets/images/backgrounds/beachBackground.svg',
+        src: '../assets/images/background-options/beachOption.svg',
         wallpaper: '../assets/images/backgrounds/beachBackground.svg',
     },
     {
         id: 'city-background',
-        src: '../assets/images/backgrounds/cityLightsBackground.svg',
+        src: '../assets/images/background-options/cityLightsOption.svg',
         wallpaper: '../assets/images/backgrounds/cityLightsBackground.svg',
     }
 ]
