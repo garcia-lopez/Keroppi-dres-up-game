@@ -1,5 +1,4 @@
 // This file contains the data for the clothes options in the game.
-// I am not using the id property in the images array, but I am keeping it in case I may use it in the future.
 export const imagesArray = [
     {
         id: 'first-option',
